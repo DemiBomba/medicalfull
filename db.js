@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/MedicalDB', (err) => {
-    if (!err) 
-        console.log('MongoDB connected');
-        else
-        console.log('Connection to mongodb failed: ' + JSON.stringify(err, undefined, 2));
-});
+mongoose.connect('mongodb+srv://Demi:P5Sf3hgGhQgYHLv@cluster0.6aql49a.mongodb.net/?retryWrites=true&w=majority');
 
 module.exports = mongoose;
 
